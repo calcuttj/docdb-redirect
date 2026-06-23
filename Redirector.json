@@ -1,0 +1,23 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2026-06-23T19:14:57.581Z",
+    "redirects": [
+        {
+            "description": "Always open docdb with SSO ",
+            "exampleUrl": "https://microboone-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=34021&filename=uBooNEtutorial_Feb21.pdf",
+            "exampleResult": "https://microboone-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=34021uBooNEtutorial_Feb21.pdf",
+            "error": null,
+            "includePattern": "https://(?:urldefense\\.com/v3/__)?(microboone-docdb\\.fnal\\.gov|docs\\.dunescience\\.org)/cgi-bin/private/([^?]*)\\?docid=(\\d+)(?:&filename=(.+?))?(?:__|$)",
+            "excludePattern": "",
+            "patternDesc": "Switch private --> sso, capture docid number and file name, remove urldefense",
+            "redirectUrl": "https://$1/cgi-bin/sso/$2?docid=$3$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
