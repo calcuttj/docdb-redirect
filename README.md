@@ -1,7 +1,7 @@
 This is used to automatically redirect various FNAL docdb URLs from "private" to "sso". 
 
 
-1. Add the [Redirector](https://einaregilsson.com/redirector/) addon to your Firefox browser
+1. Add the [Redirector](https://einaregilsson.com/redirector/) addon to your browser
 2. Click the Redirector icon and select "Edit Redirects"
 3. Select "Import" and upload the Redirector.json found in this repo
 
